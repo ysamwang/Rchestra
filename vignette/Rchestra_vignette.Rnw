@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\title{Rchestra Vignette}
+\usepackage[margin = 1in]{geometry}
+\begin{document}
+\maketitle
+\section{Introduction}
+Have you ever coded in \texttt{R} silently, wishing that you could launch music from your R console. Your wait is over. \texttt{Rchestra} is live.
+
+\subsection{Instructions}
+\begin{itemize}
+\item You can use the \texttt{devtools} package to grab the \texttt{Rchestra} package off github
+\item Install the package and load it into your instance of \texttt{R}
+\item Play Songs
+\end{itemize}
+<<eval = FALSE>>=
+# install.packages('devtools')
+library('devtools')
+install_github('Rchestra', username = "ysamwang")
+library('Rchestra')
+play_song("Hello Adele")
+@
+
+\section{Use Cases}
+
+\subsection{Simulations}
+Say you're running some simulations that could take a while. Slip a few lines of code into your loop to make sure you know when your computations are almost done. Meanwhile, as the last simulation is running, get yourself hyped up to see your results.
+
+<<eval = FALSE>>=
+num.sims <- 1000
+for(i in 1:num.sims){
+  if(i == num.sims){
+    play_song("Final Countdown Europe")
+  }
+
+  #### Simulation ####
+  # ...
+  # ...
+  #### End of Simulations ####
+
+}
+@
+
+
+\subsection{Errors}
+Say you've been debugging for hours and you're slowly wasting away with each new error you find. Change your R options to pick yourself up with a little bit. Each time you hit a non-fatal error, \texttt{Rchestra} will play a song from a carefully curated playlist.
+
+<<eval = FALSE>>=
+options(error = error_songs())
+nonExistentVariable
+@
+
+\subsection{Collaborators}
+Say you're working with a collaborator who's a fan of Rick Astley. Next time you share you're code...
+<<eval = FALSE>>=
+#### Lines and Lines of undocumented, poorly formatted code ####
+#### Lines and Lines of undocumented, poorly formatted code ####
+play_song("Never Gonna Give You Up Rick Astley")
+#### Lines and Lines of undocumented, poorly formatted code ####
+#### Lines and Lines of undocumented, poorly formatted code ####
+@
+
+\end{document}
