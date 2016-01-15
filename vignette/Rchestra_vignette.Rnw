@@ -47,7 +47,7 @@ for(i in 1:num.sims){
 Say you've been debugging for hours and you're slowly wasting away with each new error you find. Change your R options to pick yourself up with a little bit. Each time you hit a non-fatal error, \texttt{Rchestra} will play a song from a carefully curated playlist.
 
 <<eval = FALSE>>=
-options(error = error_songs())
+options(error = error_songs)
 
 thisVariableDoesNotExist
 
