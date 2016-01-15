@@ -76,9 +76,10 @@ Have you ever coded in \texttt{R} silently, wishing that you could launch music 
 \end{knitrout}
 
 \section{Use Cases}
+Here are three extremely compelling use cases for the \texttt{Rchestra} package. If you can come up with others, feel free to fork and send a pull request.
 
 \subsection{Simulations}
-Say you're running some simulations that could take a while. Slip a few lines of code into your loop to make sure you know when your computations are almost done. Meanwhile, as the last simulation is running, get yourself hyped up for the results.
+Say you're running some simulations that could take a while. Slip a few lines of code into your loop to make sure you know when your computations are almost done. Meanwhile, as the last simulation is running, get yourself hyped up to see your results.
 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
@@ -107,7 +108,10 @@ Say you've been debugging for hours and you're slowly wasting away with each new
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{options}\hlstd{(}\hlkwc{error} \hlstd{=} \hlkwd{error_songs}\hlstd{())}
-\hlstd{nonExistentVariable}
+
+\hlstd{thisVariableDoesNotExist}
+
+\hlstr{'strings cant be added to numbers'} \hlopt{+} \hlnum{2}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
