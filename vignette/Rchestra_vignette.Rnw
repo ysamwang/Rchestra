@@ -57,7 +57,7 @@ thisVariableDoesNotExist
 @
 
 \subsection{Collaborators}
-Say you're working with a collaborator who's a fan of Rick Astley. Next time you share you're code...
+Say you're working with a collaborator who's a fan of Rick Astley. Next time you share your code...
 <<eval = FALSE>>=
 #### Lines and Lines of undocumented, poorly formatted code ####
 #### Lines and Lines of undocumented, poorly formatted code ####
