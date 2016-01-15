@@ -1,10 +1,10 @@
 Package: Rchestra
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Plays Music
 Version: 0.1
 Date: 2016-01-14
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Y. Samuel Wang
+Maintainer: Y. Samuel Wang <ysamwang@uw.edu>
+Description: Launches music from R console
+License: GPL-2
 LazyData: TRUE
